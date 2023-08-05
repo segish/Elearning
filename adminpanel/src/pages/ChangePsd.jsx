@@ -65,7 +65,7 @@ const ChangePsd = () => {
         <div className="flex dark:text-gray-400">
             <div className="flex-initial w-full h-fit ">
                 <div className="p-7 flex items-center justify-center">
-                    <label className="font-bold text-lg lg:text-2xl dark:text-gray-400  ">Change Your Password</label>
+                    <label className="font-bold text-lg lg:text-2xl dark:text-gray-400  ">Change Admin Password</label>
                 </div>
                 <div className="shadow-md   p-10 pt-6   sm:mx-20 flex items-center justify-start ">
                     <form className="flex flex-col w-full justify-center gap-14 items-center">
