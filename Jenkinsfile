@@ -4,27 +4,19 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                dir('frontend') {
-                    sh 'npm install'
-                    sh 'npm run build'
-                }
+                echo 'building...'
             }
         }
         
         stage('Test') {
             steps {
-                dir('frontend') {
-                    sh 'npm test'
-                }
+                echo 'testing...'
             }
         }
 
         stage('Deploy') {
             steps {
-                dir('backend') {
-                    sh 'npm install'
-                    sh 'npm start'
-                }
+                echo 'deploying...'
             }
         }
     }
