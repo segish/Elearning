@@ -21,28 +21,18 @@ import Sidebar from "./Components/Sidebar";
 import Navbar from "./Components/Navbar";
 import InstructorList from "./pages/InstructorList"
 import ChangePsd from "./pages/ChangePsd";
-
-
 function App() {
-
-
   const queryClient = new QueryClient()
-
   const ProtectedRoute = ({ children }) => {
-
     const {currentUser} = useContext(AuthContext)
-    
     if (currentUser === null) {
       return <Navigate to="/login" />
-
     }
     return children
   }
-
   const customCss = {
     height: "calc(100vh - 67px)",
   }
-
   const Layout = () => {
     return (
       <QueryClientProvider client={queryClient}>
@@ -58,8 +48,6 @@ function App() {
       </QueryClientProvider>
     );
   }
-
-
   const router = createBrowserRouter([
     {
       path: "/",
@@ -118,12 +106,11 @@ function App() {
       element: <Login />,
     }
   ]);
-
   return (
     <div>
       <RouterProvider router={router} />
     </div>
   )
 }
-
 export default App;
+//app.js
